@@ -1,0 +1,830 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": true
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "public",
+  "server": {
+    "objectType": "Server_SQLITE",
+    "name": "Default",
+    "uuid": "",
+    "serverVersion": 3000000,
+    "edition": "Default",
+    "serviceProvider": "",
+    "schemas": [
+      {
+        "objectType": "Schema_SQLITE",
+        "name": "public",
+        "tables": [
+          {
+            "objectType": "Table_SQLITE",
+            "name": "impressora",
+            "autoIncrement": 0,
+            "isWithoutRowID": false,
+            "oldName": "",
+            "rootPage": 0,
+            "sql": "",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "id",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "id"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "setorId",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "setorId"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "marca",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "marca"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "modelo",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "modelo"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "id"
+              ],
+              "indexFields": [
+                {
+                  "objectType": "IndexField_SQLITE",
+                  "name": "id",
+                  "collate": "",
+                  "order": "Default",
+                  "oldName": ""
+                }
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "statusCartuchos",
+            "autoIncrement": 0,
+            "isWithoutRowID": false,
+            "oldName": "",
+            "rootPage": 0,
+            "sql": "",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "id",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "id"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "nome",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "nome"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "id"
+              ],
+              "indexFields": [
+                {
+                  "objectType": "IndexField_SQLITE",
+                  "name": "id",
+                  "collate": "",
+                  "order": "Default",
+                  "oldName": ""
+                }
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "setor",
+            "autoIncrement": 0,
+            "isWithoutRowID": false,
+            "oldName": "",
+            "rootPage": 0,
+            "sql": "",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "id",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "id"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "nome",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "nome"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "sigla",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "sigla"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "id"
+              ],
+              "indexFields": [
+                {
+                  "objectType": "IndexField_SQLITE",
+                  "name": "id",
+                  "collate": "",
+                  "order": "Default",
+                  "oldName": ""
+                }
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "fk_setor_impressora_1",
+                "fields": [
+                  "id"
+                ],
+                "referencedSchema": "public",
+                "referencedTable": "impressora",
+                "referencedFields": [
+                  "setorId"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "isDeferred": false,
+                "sourceCardinality": "OneAndOnlyOneRelationship",
+                "targetCardinality": "ZeroOrManyRelationship",
+                "oldName": ""
+              }
+            ],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "abastecimento",
+            "autoIncrement": 0,
+            "isWithoutRowID": false,
+            "oldName": "",
+            "rootPage": 0,
+            "sql": "",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "id",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "id"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "impressoraId",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "Yes",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "impressoraId"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "cartuchoId",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "Yes",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "cartuchoId"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "observacao",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "observacao"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "id"
+              ],
+              "indexFields": [
+                {
+                  "objectType": "IndexField_SQLITE",
+                  "name": "id",
+                  "collate": "",
+                  "order": "Default",
+                  "oldName": ""
+                }
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "fk_abastecimento_impressora_1",
+                "fields": [
+                  "impressoraId"
+                ],
+                "referencedSchema": "public",
+                "referencedTable": "impressora",
+                "referencedFields": [
+                  "id"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "isDeferred": false,
+                "sourceCardinality": "OneOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "fk_abastecimento_cartucho_1",
+                "fields": [
+                  "cartuchoId"
+                ],
+                "referencedSchema": "public",
+                "referencedTable": "cartucho",
+                "referencedFields": [
+                  "id"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "isDeferred": false,
+                "sourceCardinality": "OneOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              }
+            ],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "cartucho",
+            "autoIncrement": 0,
+            "isWithoutRowID": false,
+            "oldName": "",
+            "rootPage": 0,
+            "sql": "",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "id",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "id"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "statusCartuchoId",
+                "type": "integer",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "statusCartuchoId"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "codigo",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "codigo"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "marca",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "marca"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "referencia",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "referencia"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "data",
+                "type": "text",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "No",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "generatedType": "None",
+                "generatedAlwaysAsValue": "",
+                "oldName": "data"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "id"
+              ],
+              "indexFields": [
+                {
+                  "objectType": "IndexField_SQLITE",
+                  "name": "id",
+                  "collate": "",
+                  "order": "Default",
+                  "oldName": ""
+                }
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "fk_cartucho_statusCartuchos_1",
+                "fields": [
+                  "statusCartuchoId"
+                ],
+                "referencedSchema": "public",
+                "referencedTable": "statusCartuchos",
+                "referencedFields": [
+                  "id"
+                ],
+                "onDelete": "",
+                "onUpdate": "",
+                "isDeferred": false,
+                "sourceCardinality": "OneOrManyRelationship",
+                "targetCardinality": "OneAndOnlyOneRelationship",
+                "oldName": ""
+              }
+            ],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          }
+        ],
+        "views": []
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Sans",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "default",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "public",
+          "tableName": "impressora",
+          "x": 390,
+          "y": 99,
+          "width": 151,
+          "height": 119,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "public",
+          "tableName": "cartucho",
+          "x": 362,
+          "y": 500,
+          "width": 209,
+          "height": 134,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "public",
+          "tableName": "setor",
+          "x": 655,
+          "y": 116,
+          "width": 150,
+          "height": 99,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "public",
+          "tableName": "statusCartuchos",
+          "x": 103,
+          "y": 522,
+          "width": 165,
+          "height": 80,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "public",
+          "tableName": "abastecimento",
+          "x": 374,
+          "y": 276,
+          "width": 215,
+          "height": 125,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "fk_cartucho_statusCartuchos_1",
+          "sourceTableName": "cartucho",
+          "sourceSchemaName": "public",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 347,
+              "y": 559
+            },
+            {
+              "x": 283,
+              "y": 562
+            }
+          ],
+          "label": {
+            "x": 129,
+            "y": 522,
+            "width": 228,
+            "height": 29,
+            "fontName": "Sans",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 204,
+              "g": 204,
+              "b": 204,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_abastecimento_impressora_1",
+          "sourceTableName": "abastecimento",
+          "sourceSchemaName": "public",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 464,
+              "y": 261
+            },
+            {
+              "x": 465,
+              "y": 233
+            }
+          ],
+          "label": {
+            "x": 472,
+            "y": 242,
+            "width": 236,
+            "height": 29,
+            "fontName": "Sans",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 204,
+              "g": 204,
+              "b": 204,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_abastecimento_cartucho_1",
+          "sourceTableName": "abastecimento",
+          "sourceSchemaName": "public",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 464,
+              "y": 416
+            },
+            {
+              "x": 466,
+              "y": 485
+            }
+          ],
+          "label": {
+            "x": 472,
+            "y": 406,
+            "width": 220,
+            "height": 29,
+            "fontName": "Sans",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 204,
+              "g": 204,
+              "b": 204,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_setor_impressora_1",
+          "sourceTableName": "setor",
+          "sourceSchemaName": "public",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 640,
+              "y": 158
+            },
+            {
+              "x": 556,
+              "y": 158
+            }
+          ],
+          "label": {
+            "x": 484,
+            "y": 121,
+            "width": 166,
+            "height": 29,
+            "fontName": "Sans",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 204,
+              "g": 204,
+              "b": 204,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}

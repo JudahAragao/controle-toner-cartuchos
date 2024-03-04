@@ -36,6 +36,8 @@ model Abastecimentos {
   impressoraId String
   impressoras Impressoras? @relation(fields: [impressoraId], references: [id])
   observacoes String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@map("abastecimentos")
 }

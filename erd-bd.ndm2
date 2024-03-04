@@ -627,7 +627,7 @@
           "x": 362,
           "y": 500,
           "width": 209,
-          "height": 134,
+          "height": 162,
           "isBold": false,
           "titleColor": {
             "r": 55,
@@ -672,8 +672,8 @@
           "type": "table",
           "schemaName": "public",
           "tableName": "abastecimento",
-          "x": 374,
-          "y": 276,
+          "x": 375,
+          "y": 291,
           "width": 215,
           "height": 125,
           "isBold": false,
@@ -729,8 +729,16 @@
           "visible": true,
           "vertices": [
             {
-              "x": 464,
-              "y": 261
+              "x": 465,
+              "y": 276
+            },
+            {
+              "x": 465,
+              "y": 247
+            },
+            {
+              "x": 465,
+              "y": 247
             },
             {
               "x": 465,
@@ -738,8 +746,8 @@
             }
           ],
           "label": {
-            "x": 472,
-            "y": 242,
+            "x": 473,
+            "y": 257,
             "width": 236,
             "height": 29,
             "fontName": "Sans",
@@ -763,8 +771,16 @@
           "visible": true,
           "vertices": [
             {
-              "x": 464,
-              "y": 416
+              "x": 465,
+              "y": 431
+            },
+            {
+              "x": 465,
+              "y": 460
+            },
+            {
+              "x": 466,
+              "y": 460
             },
             {
               "x": 466,
@@ -772,8 +788,8 @@
             }
           ],
           "label": {
-            "x": 472,
-            "y": 406,
+            "x": 473,
+            "y": 421,
             "width": 220,
             "height": 29,
             "fontName": "Sans",

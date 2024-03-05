@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// TABELA === MODEL
+
+model Users {
+  id String @id @default(uuid())
+  username String @unique
+  password String
+
+  @@map("users")
+}
+
+model StatusCartuchos {
+  id String @id @default(uuid())
+  nome String
+  cartuchos Cartuchos[]
+
+  @@map("statusCartuchos")
+}
+
+model Cartuchos {
+  id String @id @default(uuid())
+  statusCartuchoId String
+  statusCartuchos StatusCartuchos? @relation(fields: [statusCartuchoId], references: [id])
+  abastecimentos Abastecimentos[]
+  codigo String
+  marca String
+  referencia String
+
+  @@map("cartuchos")
+}
+
+model Abastecimentos {
+  id String @id @default(uuid())
+  cartuchoId String
+  cartuchos Cartuchos? @relation(fields: [cartuchoId], references: [id])
+  impressoraId String
+  impressoras Impressoras? @relation(fields: [impressoraId], references: [id])
+  observacoes String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("abastecimentos")
+}
+
+model Impressoras {
+  id String @id @default(uuid())
+  setorId String
+  setores Setores? @relation(fields: [setorId], references: [id])
+  abastecimentos Abastecimentos[]
+  marca String
+  modelo String
+
+  @@map("impressoras")
+}
+
+model Setores {
+  id String @id @default(uuid())
+  impressoras Impressoras[]
+  nome String
+  sigla String
+}

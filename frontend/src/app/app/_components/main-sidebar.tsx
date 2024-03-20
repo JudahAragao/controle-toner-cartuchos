@@ -12,7 +12,7 @@ import {
   DashboardSidebarFooter,
 } from '@/components/dashboard/sidebar'
 import { usePathname } from 'next/navigation'
-import { HomeIcon, MixerVerticalIcon } from '@radix-ui/react-icons'
+import { ArchiveIcon, HomeIcon, LayersIcon, MixerVerticalIcon, ReaderIcon } from '@radix-ui/react-icons'
 import { UserDropdown } from './user-dropdown'
 import { Logo } from '@/ui/logo'
 import { Session } from 'next-auth'
@@ -42,7 +42,31 @@ export function MainSidebar({ user }: MainSidebarProps) {
               active={isActive('/app')}
             >
               <HomeIcon className="w-3 h-3 mr-3" />
-              Tarefas
+              Dashboard
+            </DashboardSidebarNavLink>
+
+            <DashboardSidebarNavLink 
+              href="/app/impressoras"
+              active={isActive('/app/impressoras')}
+            >
+              <ReaderIcon className="w-3 h-3 mr-3" />
+              Impressoras
+            </DashboardSidebarNavLink>
+
+            <DashboardSidebarNavLink 
+              href="/app/cartuchos"
+              active={isActive('/app/cartuchos')}
+            >
+              <ArchiveIcon className="w-3 h-3 mr-3" />
+              Cartuchos & Toners
+            </DashboardSidebarNavLink>
+
+            <DashboardSidebarNavLink 
+              href="/app/setores"
+              active={isActive('/app/setores')}
+            >
+              <LayersIcon className="w-3 h-3 mr-3" />
+              Setores
             </DashboardSidebarNavLink>
             
             <DashboardSidebarNavLink

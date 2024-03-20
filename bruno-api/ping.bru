@@ -1,0 +1,23 @@
+meta {
+  name: ping
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/api/ping?ip=10.68.0.50
+  body: json
+  auth: none
+}
+
+query {
+  ip: 10.68.0.50
+}
+
+headers {
+  Authorization: 9e2a26f9-7fed-4aee-b19b-07c57c9e11c7
+}
+
+auth:bearer {
+  token: 
+}

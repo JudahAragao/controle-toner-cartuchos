@@ -1,0 +1,18 @@
+meta {
+  name: teste
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/setores
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Coordenadoria de TI",
+    "sigla":"CETI"
+  }
+}

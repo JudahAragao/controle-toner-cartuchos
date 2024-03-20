@@ -1,0 +1,19 @@
+meta {
+  name: impressoras
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/impressoras
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "setorId": "948bb436-5a8e-40ce-8ae4-b53d68661131",
+    "marca":"HP",
+    "modelo":"HP-P123123"
+  }
+}

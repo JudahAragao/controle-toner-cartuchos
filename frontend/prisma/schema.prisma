@@ -98,6 +98,7 @@ model Impressoras {
   abastecimentos Abastecimentos[]
   marca String
   modelo String
+  ip String?
 
   @@map("impressoras")
 }

@@ -16,7 +16,7 @@ export default function CardPrinterList({data}:CardPrinterData){
 
     if (Array.isArray(data)) {
         return (
-            <div className='flex gap-4'>
+            <div className='flex gap-6'>
                 {data.map((printerData, index) => (
                     <CardPrinter key={index} data={printerData} />
                 ))}

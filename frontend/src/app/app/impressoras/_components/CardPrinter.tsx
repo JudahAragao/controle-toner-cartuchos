@@ -2,6 +2,7 @@ import { Button } from "@/app/components/ui/button"
 import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 import { ImpressoraComSetor } from "../types";
 import axios from "axios";
+import { useEffect, useState } from "react";
 
 type CardPrinterData = {
   data: ImpressoraComSetor;
@@ -16,8 +17,18 @@ const fetchData = async (ip:string | null) => {
     return responseData.alive ? 'Online' : 'Offline'
 };
 
-export default async function CardPrinter({data}:CardPrinterData) {
-  const status = await fetchData(data.ip)
+export default function CardPrinter({data}:CardPrinterData) {
+  const [status, setStatus] = useState('Carregando...')
+
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      const newStatus = await fetchData(data.ip);
+      setStatus(newStatus);
+    }, 5000); // Faz a requisição a cada 5 segundos
+
+    // Limpa o intervalo quando o componente é desmontado
+    return () => clearInterval(interval);
+  }, [data.ip]);
 
   return (
     <Card className="w-full max-w-xs">
@@ -38,9 +49,9 @@ export default async function CardPrinter({data}:CardPrinterData) {
         </div>
       </CardContent>
       <CardFooter>
-        <Button variant="outline">
-            <RefreshCwIcon />
-            <p className="ml-2">Recarregar</p>
+        <Button variant="outline" size="sm">
+            <RefreshCwIcon className="w-4 h-4 mr-3"/>
+            Recarga
         </Button>
       </CardFooter>
     </Card>
